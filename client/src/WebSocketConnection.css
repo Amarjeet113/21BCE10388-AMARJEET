@@ -1,0 +1,101 @@
+/* Overall container styling */
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Title styling */
+.game-container h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Game board styling */
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: contents;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.cell:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+.piece {
+  font-size: 1.5rem;
+}
+
+.piece.P {
+  color: #007bff; /* Customize color for piece type P */
+}
+
+.piece.H {
+  color: #28a745; /* Customize color for piece type H */
+}
+
+/* Game message styling */
+.game-message {
+  font-size: 1.2rem;
+  color: #d9534f;
+  margin-top: 10px;
+}
+
+/* Current turn styling */
+h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
